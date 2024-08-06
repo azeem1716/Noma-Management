@@ -1,57 +1,72 @@
-import React from "react";
-import { useRef } from "react";
 
-import {
-  FaInstagram,
+import React, { useRef } from "react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import { FaArrowRightLong , FaInstagram,
   FaLinkedinIn,
   FaTwitter,
-  FaFacebookF,
-} from "react-icons/fa6";
+  FaFacebookF,} from "react-icons/fa6";
+// import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
 import { blogData } from "../../utils/ApplicationData";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-  Autoplay,
-} from "swiper/modules";
-
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
-
 const BlogCard = () => {
-  const swiperRef = useRef(null);
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
 
-  const handlePrevClick = () => {
-    if (swiperRef.current && swiperRef.current.swiper) {
-      swiperRef.current.swiper.slidePrev();
-    }
-  };
-
-  const handleNextClick = () => {
-    if (swiperRef.current && swiperRef.current.swiper) {
-      swiperRef.current.swiper.slideNext();
-    }
-  };
 
   return (
-    <div className="swiper-wrapper-container">
-      <div className="swiper-container">
-        {/* <button className="custom-prev" onClick={handlePrevClick}>Prev</button> */}
-        <Swiper
-          modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-          spaceBetween={10}
+    <div >
+      <div className="container d-flex justify-content-center align-items-center">
+        {/* <div> */}
+      <button ref={prevRef} className="custom-navigation prev">
+          <FaArrowLeft className="secondary-text" />
+        </button>   
+        {/* </div> */}
+ 
+        <Swiper className="blog-swiper"
+          modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
           slidesPerView={3}
-          navigation={true}
-          // autoplay={{ delay: 0, disableOnInteraction: false }}
-          speed={2000} // Adjust speed to control slide transition time
-          loop={true}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
+          centeredSlides={true}
+          // navigation={{ clickable: true }}
+          loop
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+
+          breakpoints={{
+            320:{
+              slidesPerView: 1,
+              spaceBetween: 50,
+            },
+            // when window width is >= 640px
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            // when window width is >= 768px
+            768: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            // when window width is >= 1024px
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 50,
+            },
+          }}
+          onSwiper={(swiper) => {
+            // Make sure Swiper instance is set to the correct navigation elements
+            swiper.params.navigation.prevEl = prevRef.current;
+            swiper.params.navigation.nextEl = nextRef.current;
+            swiper.navigation.init();
+            swiper.navigation.update();
+          }}
         >
           {blogData.map((data, index) => (
             <SwiperSlide className="swipper-slide" key={index}>
@@ -90,7 +105,12 @@ const BlogCard = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        {/* <button className="custom-next" onClick={handleNextClick}>Next</button> */}
+
+        {/* <div> */}
+        <button ref={nextRef} className="custom-navigation next">
+          <FaArrowRight className="secondary-text" />
+        </button>
+        {/* </div> */}
       </div>
     </div>
   

@@ -5,11 +5,14 @@ import {exploreCardData} from "../../utils/ApplicationData";
 
 const ExploreCard = () => {
   return (
-    <div className="container max-width d-flex  justify-content-center gap-4">
+    <div className="container max-width d-flex flex-column flex-xl-row justify-content-center align-items-center gap-4">
       {exploreCardData.map((cardData, index) => (
         <div key={index}>
           <div className="explore-card p-4 text-dark-2  ">
-            <div className="explore-card-icon"><img src={cardData.src}/></div>
+            <div className="explore-card-icon">
+              {/* <img src={cardData.src}/> */}
+              {cardData.component}
+              </div>
             <div className="mt-5">
               <h2 className="small-heading medium-text ">
                 {cardData.title}

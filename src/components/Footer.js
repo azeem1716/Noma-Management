@@ -10,7 +10,7 @@ const Footer = () => {
      <div className='container max-width'>
      <div className='container max-width'>
       <div className='row '>
-        <div className='col-3 '>
+        <div className='col-12 col-md-6 col-xl-3 '>
           <h2 className='ms-3 mb-5 paragraph medium-text secondary-text text-uppercase'>About</h2>
           <ul className='list-unstyled g-3 secondary-text regular-text sub-paragraph'>
             <li className='mb-3'>
@@ -40,7 +40,7 @@ const Footer = () => {
               </li>
           </ul>
         </div>
-        <div className='col-3'>
+        <div className='col-12 col-md-6 col-xl-3'>
         <h2 className=' mb-5 paragraph medium-text secondary-text text-uppercase'>Contact Info</h2>
         <ul className='list-unstyled secondary-text regular-text sub-paragraph'>
             <li className='mb-2'>
@@ -53,7 +53,7 @@ const Footer = () => {
             <li className='mb-2'><a href='#'>Contact US</a></li>
           </ul>
         </div>
-        <div className='col-3'>
+        <div className='col-12 col-md-6 col-xl-3'>
         <h2 className=' mb-5 paragraph medium-text secondary-text text-uppercase'>Quick Links</h2>
         <ul className='list-unstyled secondary-text regular-text sub-paragraph'>
             <li className='mb-2'><a href='#'>Political Law</a></li>
@@ -65,7 +65,7 @@ const Footer = () => {
 
           </ul>
         </div>
-        <div className='col-3'>
+        <div className='col-12 col-md-6 col-xl-3'>
         <h2 className=' mb-5 paragraph medium-text secondary-text text-uppercase'>Working Hours</h2>
         <div className='d-inline-flex justify-content-center align-items-center p-3 gap-5 working-hours-box'>
           <ul className=' list-unstyled secondary-text regular-text sub-paragraph'>
@@ -90,7 +90,7 @@ const Footer = () => {
         </div>
       </div>
 
-    <div className='d-inline-flex justify-content-center align-items-center gap-3'>
+    <div className='d-inline-flex justify-content-center align-items-center gap-3 mt-3'>
       <div className='footer-icon  d-flex justify-content-center align-items-center'>
       <FaFacebookF className='icon' />
       </div>
@@ -103,9 +103,9 @@ const Footer = () => {
     </div>
       <div className='divider'></div>
 
-      <div className='d-flex justify-content-between align-items-center secondary-text sub-paragraph light-text'>
+      <div className='d-flex flex-column flex-xl-row justify-content-between align-items-center secondary-text sub-paragraph light-text'>
        <div>
-       <div className='d-inline-flex justify-content-between align-items-center gap-4 '>
+       <div className='d-inline-flex  justify-content-between align-items-center gap-4 '>
           <span>
             <a>Privacy Policy</a> 
           </span>

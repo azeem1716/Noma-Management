@@ -94,6 +94,7 @@
 }
 /* FIXED GRID  */
 
+
 .hero_section{
     background-image: url('./assests/images/Home-Banner.png');
     background-repeat: no-repeat;
@@ -107,19 +108,37 @@
 }
 
 .chat_widget_card{
-    width: 430px;
-    height: 220px;
+   max-width: 430px;
+    max-height: 220px; 
     background-color: var(--dark-blue);
     position: relative;
-   top: 280px
+   top: 220px
+}
+
+.chat_widget_card:hover{
+    background-color: var(--primary-color);
+    transition: .5s ease;
+    border-radius: 15px;
+    scale: 1.05;
+}
+.chat_widget_card:hover .live_chat{
+    color: var(--primary-color);
+    transition: .5s ease;
+    scale: 1.05;
 }
 
 .live_chat{
     background-color: var(--white-color);
-    padding: 16px 15px;
+    padding: 11px 10px;
     border-radius: 100px;
     display: inline-flex;
 }
+
+
+.live_chat:hover .chat-icon{
+    scale: 1.07;
+}
+
 
 .law-card{
     max-width: 300px;
@@ -184,6 +203,26 @@
 }
 
 
+
+/* 
+
+.About-us-section{
+    position: relative;
+    width: screen;
+}
+
+.About-us-section::before{
+    content: '';
+    position: absolute;
+    top: 20px;
+    z-index: -1;
+    min-width: 650px; 
+    height: 520px; 
+    background-color: var(--dark-blue) ;
+    background-position: end;
+} */
+
+
 /* COMPONENTS  */
 .green_btn{
     background-color: var(--primary-color);
@@ -192,6 +231,12 @@
     border: 2px solid var(--primary-color-dark);
     border-radius: 100px;
     display: inline-flex;
+}
+.green_btn:hover{
+    background-color: var(--dark-gray);
+    color: var(--dark-blue);
+    border-color: var((--primary-color));
+    transition: .4s ease;
 }
 
 .explore-card{
@@ -204,7 +249,15 @@
 .explore-card:hover{
     background-color: var(--primary-color);
     transition: .4s ease;
-    color: white;
+    color: var(--white-color);
+    border-radius: 10px;
+    scale: 1.05;
+    /* color:var(--dark-blue); */
+}
+
+.explore-card:hover .explore-card-icon{
+    background-color: var(--primary-color-dark);
+    color: var(--white-color);
 }
 
 .explore-card-icon{
@@ -212,6 +265,7 @@
     padding: 10px;
     border-radius: 50px;
     border: 1px solid var(--white-color);    
+    background-color: var(--white-color);
 }
 .explore-card-button{
     position:absolute;
@@ -229,6 +283,14 @@
     height: 990px;
     width: 1650px; */
 }
+
+.blog-swiper{
+    min-height: 400px !important;
+    margin-left: 50px !important;
+ 
+}
+
+
 .blog-card{
     width: 330px;
     height: 300px;
@@ -243,6 +305,35 @@
     border-color: #36838c;
     transition: .3s ease;
 }
+
+.custom-navigation{
+    background: none;
+    border: none;
+    margin-top: -80px;
+}
+
+.custom-navigation-2{
+    background-color: #e0eced; border: none;
+ border-radius: 5px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 5px;
+}
+
+.services-swiper{
+    margin-left: 40px;
+}
+.custom-navigation-2:hover{
+    background-color: var(--primary-color);
+    transition: 0.4s ease;
+    color: var(--white-color);
+}
+
+/* .custom-navigation .prev{
+    margin-left: -150px;
+}
+ */
 
 .social-icon-container{
     background-color: var(--dark-blue);
@@ -278,20 +369,23 @@ align-items: center;
     height: 15px;
 }
 
+.slider-2-container{
+    background-color: var(--white-color);
+    padding: 50px;
+}
 
-.swiper-wrapper-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.swipper-2{
+    margin-left: 60px !important;
+}
 
-
-.swiper-container {
-    width: 90%; 
-    max-width: 1440px; 
-    position: relative; 
-  }
-
+.happy-client-box{
+    height: 115px;
+     width: 152px;  
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: var(--dark-blue);
+}
   .footer{
     background-color: #04051b;
     padding: 60px 0px 60px 0px;
@@ -346,3 +440,151 @@ ul>li>a:hover{
 }
 /* COMPONENTS  */
 
+@media(max-width:428px){
+    
+/* FONT SIZES  */
+
+.main-heading{
+    font-size: 40px;
+}
+.sub-heading{
+    font-size: 24px;
+}
+.small-heading{
+    font-size: 18px;
+}
+.paragraph{
+    font-size: 12px;
+}
+.sub-paragraph{
+    font-size: 10px;
+}
+.small-paragraph{
+    font: 10px;
+}
+/* FONT SIZES  */
+
+}
+
+@media (max-width:1200px) {
+    .chat_widget_card{
+        width: 300px;
+    height: 220px;
+        position: relative;
+        top:20px
+    }
+    .chat_widget_card p{
+        font-size: 10px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1080px) {
+
+      
+.chat_widget_card{
+    max-width: 350px;
+     max-height: 150px; 
+     background-color: var(--dark-blue);
+     position: relative;
+    top: 20px;
+    left:400px
+ }
+
+
+    .blog-swiper{
+        height: 300px;
+        margin-left: 150px !important;
+    }
+}
+
+@media (min-width:375px) and (max-width:428px){
+.green_btn{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 10px 20px 10px 20px;
+    border: 2px solid var(--primary-color-dark);
+    border-radius: 100px;
+    display: inline-flex;
+}
+ .explore-card{
+    height: 280px;
+    max-width:250px;
+ }
+.blog-swiper{
+    height: 300px;
+    margin-left: 20px !important;
+}
+ .blog-card{
+    width: 250px;
+    height: 280px;
+    background-color: #122035;
+    border-radius: 25px;
+    border: 2px solid #19283f;
+    position: relative;
+}
+
+
+.social-icon-container{
+    padding: 8px 20px;
+    position: absolute;
+    bottom: -25px;
+    right: 25px;
+
+}
+
+.law-section{
+    margin-top: 50px;
+    max-width: 428px;
+}
+
+.law-section::before{
+    content: '';
+    /* position: absolute;
+    top: 20px; */
+    z-index: -1;
+    max-width:428px; 
+    height: 400px; 
+    background-color: var(--dark-blue) 
+}
+
+
+    .law-section-image{
+        height: 350px;
+        width: 280px;
+        position: relative;
+        top: 50px;
+        left: -20px;
+    }
+   
+
+    
+.law-section .text-section {
+ margin-top: 100px !important;   
+}
+
+    
+.chat_widget_card{
+    max-width: 350px;
+     max-height: 150px; 
+     background-color: var(--dark-blue);
+     position: relative;
+    top: 20px
+ }
+
+ .happy-client-box{
+    height: 70px;
+     width: 140px;  
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: var(--dark-blue);
+}
+
+.happy-client-box h2{
+font-size: 10px;
+}
+.happy-client-box span{
+    font-size: 8px;
+    margin-top: -10px !important;
+}
+}
