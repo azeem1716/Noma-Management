@@ -11,20 +11,20 @@ const Footer = () => {
      <div className='container max-width'>
       <div className='row '>
         <div className='col-12 col-md-6 col-xl-3 '>
-          <h2 className='ms-3 mb-5 paragraph medium-text secondary-text text-uppercase'>About</h2>
-          <ul className='list-unstyled g-3 secondary-text regular-text sub-paragraph'>
+          <h2 className='ms-xl-3 mb-xl-5 text-md montserrat-medium secondary-text text-uppercase footer-link'>About</h2>
+          <ul className='list-unstyled g-3 secondary-text montserrat-regular'>
             <li className='mb-3'>
              <a href='#'> <div className='d-flex justify-content-start align-content-start gap-2'>
                 <FaLocationDot/>
-                <h2 className='sub-paragraph '>Address</h2>
+                <h2 className='text-sm '>Address</h2>
               </div>
-                <span className='small-paragraph ms-3'>150 Torrent Court Street, PK</span></a>
+                <span className='text-sm ms-3'>150 Torrent Court Street, PK</span></a>
               </li>
               <li className='mb-3'>
              <a href='#'>
              <div className='d-flex justify-content-start align-content-start gap-2'>
               <FaMobileAlt />
-                <h2 className='sub-paragraph '>Call Us 24/7</h2>
+                <h2 className='text-sm '>Call Us 24/7</h2>
               </div>
                 <span className='small-paragraph ms-3'>(+92) 03058587336</span>
              </a>
@@ -33,42 +33,42 @@ const Footer = () => {
              <a href='#'>
              <div className='d-flex justify-content-start align-content-start gap-2'>
               <MdEmail />
-                <h2 className='sub-paragraph '>Email</h2>
+                <h2 className='text-sm '>Email</h2>
               </div>
-                <span className='small-paragraph ms-3'>info@bostonea.com</span>
+                <span className='text-sm ms-3'>info@bostonea.com</span>
              </a>
               </li>
           </ul>
         </div>
         <div className='col-12 col-md-6 col-xl-3'>
-        <h2 className=' mb-5 paragraph medium-text secondary-text text-uppercase'>Contact Info</h2>
-        <ul className='list-unstyled secondary-text regular-text sub-paragraph'>
+        <h2 className=' mb-xl-5 text-md montserrat-medium secondary-text text-uppercase text-uppercase footer-link'>Contact Info</h2>
+        <ul className='list-unstyled secondary-text montserrat-regular'>
             <li className='mb-2'>
-              <a href='#'>  Home</a>
+              <a href='#'  className='text-sm'>  Home</a>
             </li>
             <li className='mb-2'>
-              <a href='#'>About Us</a></li>
-            <li className='mb-2'><a href='#'>Our Room</a></li>
-            <li className='mb-2'><a href='#'>Blog</a></li>
-            <li className='mb-2'><a href='#'>Contact US</a></li>
+              <a href='#' className='text-sm'>About Us</a></li>
+            <li className='mb-2 text-sm'><a href='#'>Our Room</a></li>
+            <li className='mb-2 text-sm'><a href='#'>Blog</a></li>
+            <li className='mb-2 text-sm'><a href='#'>Contact US</a></li>
           </ul>
         </div>
-        <div className='col-12 col-md-6 col-xl-3'>
-        <h2 className=' mb-5 paragraph medium-text secondary-text text-uppercase'>Quick Links</h2>
-        <ul className='list-unstyled secondary-text regular-text sub-paragraph'>
-            <li className='mb-2'><a href='#'>Political Law</a></li>
-            <li className='mb-2'><a href='#'>Divorse law</a></li>
-            <li className='mb-2'><a href='#'>Business Law</a></li>
-            <li className='mb-2'><a href='#'>Industrial Law</a></li>
-            <li className='mb-2'><a href='#'>Real Estate Law</a></li>
-            <li className='mb-2'><a href='#'>Car Law</a></li>
+        <div className='col-12 col-md-6 col-xl-3'> 
+        <h2 className=' mb-xl-5 text-md montserrat-medium secondary-text text-uppercase secondary-text text-uppercase footer-link'>Quick Links</h2>
+        <ul className='list-unstyled secondary-text montserrat-regular'>
+            <li className='mb-2 text-sm'><a href='#'>Political Law</a></li>
+            <li className='mb-2 text-sm'><a href='#'>Divorse law</a></li>
+            <li className='mb-2 text-sm'><a href='#'>Business Law</a></li>
+            <li className='mb-2 text-sm'><a href='#'>Industrial Law</a></li>
+            <li className='mb-2 text-sm'><a href='#'>Real Estate Law</a></li>
+            <li className='mb-2 text-sm'><a href='#'>Car Law</a></li>
 
           </ul>
         </div>
-        <div className='col-12 col-md-6 col-xl-3'>
-        <h2 className=' mb-5 paragraph medium-text secondary-text text-uppercase'>Working Hours</h2>
+        <div className='col-8 col-md-6 col-xl-3'>
+        <h2 className=' mb-xl-5 text-md montserrat-medium secondary-text text-uppercase secondary-text text-uppercase footer-link'>Working Hours</h2>
         <div className='d-inline-flex justify-content-center align-items-center p-3 gap-5 working-hours-box'>
-          <ul className=' list-unstyled secondary-text regular-text sub-paragraph'>
+          <ul className=' list-unstyled secondary-text montserrat-regular'>
             <li>Monday</li>
             <li>Tuesday</li>
             <li>Wednesday</li>
@@ -107,20 +107,20 @@ const Footer = () => {
        <div>
        <div className='d-inline-flex  justify-content-between align-items-center gap-4 '>
           <span>
-            <a>Privacy Policy</a> 
+            <a className='text-decoration-none text-sm secondary-text montserrat-regular'>Privacy Policy</a> 
           </span>
-    <div className='vertical-divider'></div>
+    <div className='text-decoration-none text-sm secondary-text montserrat-regular'></div>
           <span>
-            <a>Cookies acceptance/policy </a>
+            <a className='text-decoration-none text-sm secondary-text montserrat-regular'>Cookies acceptance/policy </a>
           </span>
-          <div className='vertical-divider'></div>
+          <div className='text-decoration-none text-sm secondary-text montserrat-regular'></div>
           <span>
-            <a>Spam Policy</a>
+            <a className='text-decoration-none text-sm secondary-text montserrat-regular'>Spam Policy</a>
           </span>
         </div>
        </div>
         <div>
-          <span>© 2024, All Rights Reserved</span>
+          <span className='text-decoration-none text-sm secondary-text montserrat-regular'>© 2024, All Rights Reserved</span>
         </div>
       </div>
       </div>

@@ -23,8 +23,8 @@ import { lawData } from "../../utils/ApplicationData";
 
 const LawCard = () => {
   return (
-    <div className="d-flex justify-content-center  align-items-center gap-4 mt-5 services-swiper">
-      <Swiper 
+    <div className="d-flex flex-wrap justify-content-center  align-items-center mt-5 gap-2">
+      {/* <Swiper 
         modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
         slidesPerView={4}
         // centeredSlides={true}
@@ -53,10 +53,10 @@ const LawCard = () => {
             spaceBetween: 10,
           },
         }}
-      >
+      > */}
         {lawData.map((cardData, index) => (
-          <SwiperSlide key={index}>
-            <div className="law-card d-flex justify-content-center align-items-center ">
+          // <SwiperSlide key={index}>
+            <div className="law-card d-flex justify-content-center align-items-center  ">
               <div>
                 <div>
                   <img className="law-card-image" src={cardData.src} />
@@ -85,9 +85,9 @@ const LawCard = () => {
                 </div>
               </div>
             </div>
-          </SwiperSlide>
+          // </SwiperSlide>
         ))}
-      </Swiper>
+      {/* </Swiper> */}
     </div>
   );
 };

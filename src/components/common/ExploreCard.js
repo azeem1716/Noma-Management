@@ -9,16 +9,17 @@ const ExploreCard = () => {
       {exploreCardData.map((cardData, index) => (
         <div key={index}>
           <div className="explore-card p-4 text-dark-2  ">
+            <div className="d-flex gap-2">
             <div className="explore-card-icon">
-              {/* <img src={cardData.src}/> */}
               {cardData.component}
               </div>
-            <div className="mt-5">
+            <div >
               <h2 className="small-heading medium-text ">
                 {cardData.title}
               </h2>
             </div>
-            <div className="mt-3">
+            </div>
+            <div className="mt-1">
               <p className="sub-paragraph light-text ">
                 {cardData.paragraph}
               </p>

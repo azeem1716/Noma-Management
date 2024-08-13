@@ -32,7 +32,7 @@ const Slider2 = () => {
         </button> 
         <Swiper className="swipper-2"
           modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
-          slidesPerView={4}
+          slidesPerView={3}
           spaceBetween={20}
         centeredSlides={true}
 

@@ -70,23 +70,23 @@ const BlogCard = () => {
         >
           {blogData.map((data, index) => (
             <SwiperSlide className="swipper-slide" key={index}>
-              <div className="blog-card d-flex flex-column justify-content-center align-items-center">
+              <div className="d-flex flex-column justify-content-center align-items-center">
                 <div>
                   <img src={data.src} />
                 </div>
                 <div className="text-center">
-                  <h2 className="text-uppercase paragraph medium-text secondary-text">
+                  <h2 className="text-uppercase text-md montserrat-semi-bold">
                     {data.name}
                   </h2>
-                  <h3 className="text-uppercase sub-paragraph medium-text secondary-text">
+                  <h3 className="text-uppercase text-sm  montserrat-semi-bold">
                     {data.designation}
                   </h3>
-                  <h4 className="text-capitalize sub-paragraph medium-text secondary-text">
+                  <h4 className="text-capitalize ">
                     Noma Management (Pvt.) Limited
                   </h4>
                 </div>
                 <div>
-                  <div className="social-icon-container d-flex justify-content-center align-items-center gap-2">
+                  {/* <div className="social-icon-container d-flex justify-content-center align-items-center gap-2">
                     <div className="social-icon-box">
                       <FaFacebookF className="social-icon" />
                     </div>
@@ -99,7 +99,7 @@ const BlogCard = () => {
                     <div className="social-icon-box">
                       <FaLinkedinIn className="social-icon" />
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </SwiperSlide>

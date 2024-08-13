@@ -29,7 +29,22 @@ export const lawData = [
       "src": require('../assests/images/Divorse-Law.png'),
       "title": "Industrial Law",
       "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed"
-  }
+  },
+  {
+    "src": require('../assests/images/Political-Law.png'),
+    "title": "Business Law",
+    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed"
+},
+{
+  "src": require('../assests/images/Political-Law.png'),
+  "title": "Business Law",
+  "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed"
+},
+{
+  "src": require('../assests/images/Political-Law.png'),
+  "title": "Business Law",
+  "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed"
+},
 ];
 
 
@@ -65,22 +80,22 @@ export const exploreCardData =[
 
 export const blogData =[
   {
-    "src": require("../assests/images/Avatar.png"),
+    "src": require("../assests/images/team-1.png"),
     "name": "  Tarique Hussain",
     "designation": " legal consultant"
   },
   {
-    "src": require("../assests/images/Avatar.png"),
+    "src": require("../assests/images/team-2.png"),
     "name": "  Tarique Hussain",
     "designation": " legal consultant"
   },
   {
-    "src": require("../assests/images/Avatar.png"),
+    "src": require("../assests/images/team-3.png"),
     "name": "  Tarique Hussain",
     "designation": " legal consultant"
   },
   {
-    "src": require("../assests/images/Avatar.png"),
+    "src": require("../assests/images/team-4.png"),
     "name": "  Tarique Hussain",
     "designation": " legal consultant"
   }
@@ -90,18 +105,18 @@ export const blogData =[
 
 export const Slider2Data= [
   {
-    "src":require('../assests/images/Habib-edu-trust.png')
+    "src":require('../assests/images/logo01.png')
   },
   {
-    "src":require('../assests/images/Habib-University.png')
+    "src":require('../assests/images/logo02.png')
   },
   {
-    "src":require('../assests/images/Bank-Al-Habib.png')
+    "src":require('../assests/images/logo03.png')
   },
   {
-    "src":require('../assests/images/Icil.png')
+    "src":require('../assests/images/logo04.png')
   },
   {
-    "src":require('../assests/images/Tpl.png')
+    "src":require('../assests/images/logo05.png')
   }
 ]
