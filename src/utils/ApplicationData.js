@@ -35,16 +35,16 @@ export const lawData = [
     "title": "Business Law",
     "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed"
 },
-{
-  "src": require('../assests/images/Political-Law.png'),
-  "title": "Business Law",
-  "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed"
-},
-{
-  "src": require('../assests/images/Political-Law.png'),
-  "title": "Business Law",
-  "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed"
-},
+// {
+//   "src": require('../assests/images/Political-Law.png'),
+//   "title": "Business Law",
+//   "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed"
+// },
+// {
+//   "src": require('../assests/images/Political-Law.png'),
+//   "title": "Business Law",
+//   "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed"
+// },
 ];
 
 

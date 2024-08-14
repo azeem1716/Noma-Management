@@ -21,9 +21,12 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { lawData } from "../../utils/ApplicationData";
 
+
+// className="d-flex flex-wrap justify-content-center  align-items-center mt-5 gap-2"
+
 const LawCard = () => {
   return (
-    <div className="d-flex flex-wrap justify-content-center  align-items-center mt-5 gap-2">
+    <div className="row gx-5 gy-3">
       {/* <Swiper 
         modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
         slidesPerView={4}
@@ -54,28 +57,32 @@ const LawCard = () => {
           },
         }}
       > */}
+
+
         {lawData.map((cardData, index) => (
           // <SwiperSlide key={index}>
-            <div className="law-card d-flex justify-content-center align-items-center  ">
-              <div>
+          
+           <div className="col-12 col-xl-4">
+             <div className=" law-card d-flex justify-content-center  ">
+              <div className="law-card-inner position-relative">
                 <div>
-                  <img className="law-card-image" src={cardData.src} />
+                  <img className="" src={cardData.src} />
                 </div>
-                <div className="mt-3 ms-2">
+                <div className="mt-4 ms-2">
                   <div>
-                    <h2 className="paragraph medium-text dark-text">
+                    <h2 className="text-md montserrat-semi-bold ">
                       {cardData.title}
                     </h2>
                   </div>
-                  <div className="law-card-text mt-3">
-                    <p className="sub-paragraph regular-text text-paragraph">
+                  <div className="law-card-text mt-4">
+                    <p className="tex-sm montserrat-medium">
                       {cardData.paragraph}
                     </p>
                   </div>
                 </div>
-                <div className="d-flex justify-content-between align-items-center mt-5 law-card-button">
+                <div className="d-flex justify-content-between align-items-center  py-3 law-card-button">
                   <div>
-                    <span className="secondary-text sub-paragraph light-text">
+                    <span className="text-sm montserrat-medium secondary-text">
                       Exploe More
                     </span>
                   </div>
@@ -85,6 +92,7 @@ const LawCard = () => {
                 </div>
               </div>
             </div>
+           </div>
           // </SwiperSlide>
         ))}
       {/* </Swiper> */}

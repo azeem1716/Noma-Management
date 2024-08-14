@@ -32,8 +32,8 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="About-Us-Section d-flex justify-content-between align-items-center py-5">
-        <div className="container max-width  d-flex justify-content-start align-items-center gap-5 ">
+      <div className="About-Us-Section d-flex  align-items-center">
+        <div className="About-Us-Section-inner  container max-width   d-flex flex-column flex-xl-row justify-content-start align-items-center ">
           <div>
             <img
               className="AboutUs-image"
@@ -42,17 +42,17 @@ const Home = () => {
           </div>
 
           <div>
-            <div>
-              <h2 className="text-xl montserrat-semi-bold ls-heading">
+            <div>    
+              <h2 className="text-lg text-capitalize montserrat-semi-bold ls-heading " >
                 About us
               </h2>
-              <p className="text-sm montserrat-medium">
+              <p className="text-sm  montserrat-medium lh-sm mt-3" >
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 nisi ut aliquip ex ea commodo consequat.
               </p>
-              <p className="text-sm montserrat-medium">
+              <p className="text-sm montserrat-medium lh-sm mb-5">
                 Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                 cupidatat non proident, sunt in culpa qui officia deserunt
@@ -69,18 +69,20 @@ const Home = () => {
       </div>
 
       <div className="law-section py-5">
-        <div className="container max-width text-center">
-          <h2 className="text-xl montserrat-medium lh-max ls-heading">
+        <div className="container max-width d-flex justify-content-center">
+         <div className="law-section-text">
+         <h2 className="text-xl montserrat-medium lh-max ls-heading text-center">
             Noma Management (Pvt.) Ltd{" "}
           </h2>
-          <p className="sub-paragraph text-paragraph light-text">
+          <p className="text-sm montserrat-medium text-center">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s
           </p>
+         </div>
         </div>
 
-        <div className="container max-width">
+        <div className="container max-width mt-5">
           <LawCard />
         </div>
       </div>
@@ -112,8 +114,8 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="reason-to-join-section d-flex justify-content-between align-items-center py-5">
-        <div className="container max-width  d-flex justify-content-start align-items-center gap-5 ">
+      <div className="reason-to-join-section d-flex justify-content-between align-items-center ">
+        <div className="reason-to-join-inner container max-width  d-flex flex-column flex-xl-row justify-content-start align-items-center ">
           <div>
             <img
               className="reason-to-join-img"
@@ -122,10 +124,10 @@ const Home = () => {
           </div>
           <div>
             <div>
-              <h2 className="text-xl montserrat-semi-bold ls-heading">
+              <h2 className="text-lg text-capitalize montserrat-semi-bold ls-heading">
                 Reason to join us
               </h2>
-              <p className="text-sm montserrat-medium">
+              <p className="text-sm lh-sm montserrat-medium mt-3 mb-5">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -147,9 +149,9 @@ const Home = () => {
 
       <div className="explore-more-section position-relative">
         <div className="explore-card-container">
-          \
+
           <div className="explore-card-heading">
-            <h2 className=" text-capitalised  text-xl montserrat-semi-bold ">
+            <h2 className=" text-capitalize  text-lg  montserrat-semi-bold ">
               Explore more about our noma managemnet (Pvt.) ltd
             </h2>
           </div>
@@ -158,8 +160,8 @@ const Home = () => {
       </div>
 
       <div className="blog-section ">
-        <div className=" container">
-          <div className="xl-container max-width">
+        <div className=" ">
+          <div className="">
             <div>
               <h2 className="text-xl text-center montserrat-bold ls-heading lh-max text-capitalize">
                 Our experienced consultant
@@ -172,9 +174,36 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="container">
+
+
+      
+      <section className="form-section ">
+      <div className="container max-width">
+        <div className="container d-flex justify-content-between ">
+          <div className="d-flex justify-content-center align-items-center">
+         <div>
+         <h2 className="text-center">Get free business touch customer me</h2>
+         <Form />
+         </div>
+          </div>
+          <div className="">
+            <div className=" position-relative form-image-container">
+            <img 
+              src={require('../assests/images/form-section-image.png')} 
+              alt="Form section illustration" 
+              className="form-image"
+            />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <div className= "customers-section ">
         <Slider2 />
       </div>
+
+
 
       {/* <div>
         <div className="hero_section d-flex justify-content-center align-items-center">
