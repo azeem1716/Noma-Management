@@ -15,12 +15,12 @@ const Home = () => {
   return (
     <div className="Home-page">
       <div className="hero_section d-flex justify-content-start align-items-center">
-        <div className="max-width container">
-          <div className="hero-text-section ">
-            <h2 className="text-xxl montserrat-semi-bold lh-max ls-heading">
+        <div className="max-width container d-flex justify-content-center justify-content-lg-start">
+          <div className="hero-text-section text-center text-lg-start">
+            <h2 className="text-capitalize text-xxl montserrat-semi-bold lh-max ls-heading">
               Empowering your business Solutions for success
             </h2>
-            <p className="ls-paragraph">
+            <p className="ls-paragraph text-sm montserrat-medium">
               {" "}
               Noma Management (Pvt.) Ltd is a well-established and reputable
               legal and business consultancy firm with a specific focus on the
@@ -33,7 +33,7 @@ const Home = () => {
       </div>
 
       <div className="About-Us-Section d-flex  align-items-center">
-        <div className="About-Us-Section-inner  container max-width   d-flex flex-column flex-xl-row justify-content-start align-items-center ">
+        <div className="About-Us-Section-inner  container max-width   d-flex flex-column-reverse flex-xl-row justify-content-start align-items-center ">
           <div>
             <img
               className="AboutUs-image"
@@ -41,18 +41,18 @@ const Home = () => {
             />
           </div>
 
-          <div>
-            <div>    
+          <div >
+            <div className="d-flex flex-column justify-content-center align-items-center align-items-xl-start text-center  text-xl-start">    
               <h2 className="text-lg text-capitalize montserrat-semi-bold ls-heading " >
                 About us
               </h2>
-              <p className="text-sm  montserrat-medium lh-sm mt-3" >
+              <p className="text-sm  montserrat-medium lh-sm mt-xl-3" >
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 nisi ut aliquip ex ea commodo consequat.
               </p>
-              <p className="text-sm montserrat-medium lh-sm mb-5">
+              <p className="text-sm montserrat-medium lh-sm mb-xl-5">
                 Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                 cupidatat non proident, sunt in culpa qui officia deserunt
@@ -68,7 +68,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="law-section py-5">
+      <div className="law-section py-xl-5">
         <div className="container max-width d-flex justify-content-center">
          <div className="law-section-text">
          <h2 className="text-xl montserrat-medium lh-max ls-heading text-center">
@@ -82,20 +82,21 @@ const Home = () => {
          </div>
         </div>
 
-        <div className="container max-width mt-5">
+        <div className="container d-flex justify-content-center align-items-center max-width mt-5">
           <LawCard />
         </div>
       </div>
 
-      <div className="satisfied-client-section my-5">
+      <div className="satisfied-client-section my-lg-5">
         <div className="container secondary-text">
-          <div className="row max-width">
-            <div className="col-6 d-flex justify-content-center align-items-center">
-              <div style={{ marginTop: "100px", maxWidth: "500px" }}>
-                <h2 className="text-md montserrat-bold">
-                  Satisfied customers fueling our success
-                </h2>
-                <div className="d-flex justify-content-start align-items-center gap-3">
+          <div className="row max-width gx-lg-4">
+            <div className="col-12 col-lg-6 d-flex justify-content-center align-items-center">
+              <div className="satisfied-client-text">
+              <h2 className="text-capitalize text-md montserrat-bold text-center text-lg-start">
+  Satisfied customers fueling <br/> our success
+</h2>
+
+                <div className="d-flex flex-column flex-md-row justify-content-start align-items-center gap-3 ">
                   <SuccesClient title={"250+"} text={"Happy Clients"} />
                   <SuccesClient title={"95%"} text={"Success Ratio"} />
                   <SuccesClient title={"10+"} text={"Years of experience"} />
@@ -114,8 +115,8 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="reason-to-join-section d-flex justify-content-between align-items-center ">
-        <div className="reason-to-join-inner container max-width  d-flex flex-column flex-xl-row justify-content-start align-items-center ">
+      <div className="reason-to-join-section d-flex  justify-content-between align-items-center ">
+        <div className="reason-to-join-inner container max-width  d-flex flex-column-reverse flex-xl-row justify-content-start align-items-center ">
           <div>
             <img
               className="reason-to-join-img"
@@ -123,11 +124,11 @@ const Home = () => {
             />
           </div>
           <div>
-            <div>
+            <div className="d-flex flex-column justify-content-center align-items-center align-items-xl-start text-center  text-xl-start">
               <h2 className="text-lg text-capitalize montserrat-semi-bold ls-heading">
                 Reason to join us
               </h2>
-              <p className="text-sm lh-sm montserrat-medium mt-3 mb-5">
+              <p className="text-sm lh-sm montserrat-medium mt-xl-3 mb-xl-5">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -148,10 +149,10 @@ const Home = () => {
       </div>
 
       <div className="explore-more-section position-relative">
-        <div className="explore-card-container">
+        <div className="explore-card-container d-flex flex-column align-items-center align-items-xl-start">
 
           <div className="explore-card-heading">
-            <h2 className=" text-capitalize  text-lg  montserrat-semi-bold ">
+            <h2 className=" text-capitalize  text-ex-lg  montserrat-semi-bold text-center text-xl-start">
               Explore more about our noma managemnet (Pvt.) ltd
             </h2>
           </div>
@@ -163,7 +164,7 @@ const Home = () => {
         <div className=" ">
           <div className="">
             <div>
-              <h2 className="text-xl text-center montserrat-bold ls-heading lh-max text-capitalize">
+              <h2 className="text-lg text-center montserrat-bold ls-heading lh-max text-capitalize">
                 Our experienced consultant
               </h2>
             </div>
@@ -179,10 +180,10 @@ const Home = () => {
       
       <section className="form-section ">
       <div className="container max-width">
-        <div className="container d-flex justify-content-between ">
+        <div className="container d-flex flex-column flex-lg-row justify-content-center gap-xl-5 ">
           <div className="d-flex justify-content-center align-items-center">
          <div>
-         <h2 className="text-center">Get free business touch customer me</h2>
+         <h2 className="text-start ms-2 text-lg montserrat-medium text-capitalize">Get free business touch customer me</h2>
          <Form />
          </div>
           </div>

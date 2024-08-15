@@ -22,7 +22,8 @@ const Form = () => {
   };
 
   return (
-    <div className="form-container">
+    <div>
+ <div className="form-container">
       <form onSubmit={handleSubmit} className="custom-form">
         <div className="input-wrapper">
           <input
@@ -74,6 +75,8 @@ const Form = () => {
         <button type="submit" className="form-button">Schedule Service</button>
       </form>
     </div>
+    </div>
+   
   );
 };
 

@@ -32,7 +32,7 @@ const Slider2 = () => {
         </button> 
         <Swiper className="swipper-2"
           modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
-          slidesPerView={3}
+          slidesPerView={4}
           spaceBetween={20}
         centeredSlides={true}
 
@@ -47,20 +47,16 @@ const Slider2 = () => {
               slidesPerView: 1,
               spaceBetween: 50,
             },
-            // when window width is >= 640px
-            640: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-            },
+            
             // when window width is >= 768px
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 40,
+            760: {
+              slidesPerView: 3,
+              spaceBetween: 10,
             },
             // when window width is >= 1024px
             1024: {
               slidesPerView: 3,
-              spaceBetween: 50,
+              spaceBetween: 10,
             },
           }}
           onSwiper={(swiper) => {

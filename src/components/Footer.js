@@ -65,9 +65,9 @@ const Footer = () => {
 
           </ul>
         </div>
-        <div className='col-8 col-md-6 col-xl-3'>
+        <div className='col-12 col-md-6 col-xl-3'>
         <h2 className=' mb-xl-5 text-md montserrat-medium secondary-text text-uppercase secondary-text text-uppercase footer-link'>Working Hours</h2>
-        <div className='d-inline-flex justify-content-center align-items-center p-3 gap-5 working-hours-box'>
+        <div className='d-lg-flex d-md-inline-flex  justify-content-center align-items-center p-3 gap-5 working-hours-box'>
           <ul className=' list-unstyled secondary-text montserrat-regular'>
             <li>Monday</li>
             <li>Tuesday</li>

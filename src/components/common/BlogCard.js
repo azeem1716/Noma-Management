@@ -51,13 +51,13 @@ const BlogCard = () => {
             },
             // when window width is >= 768px
             768: {
-              slidesPerView: 1,
+              slidesPerView: 2,
               spaceBetween: 10,
             },
             // when window width is >= 1024px
             1024: {
               slidesPerView: 3,
-              spaceBetween: 50,
+              spaceBetween: 10,
             },
           }}
           onSwiper={(swiper) => {
@@ -70,18 +70,18 @@ const BlogCard = () => {
         >
           {blogData.map((data, index) => (
             <SwiperSlide className="swipper-slide" key={index}>
-              <div className="d-flex flex-column justify-content-center align-items-center">
+              <div className="d-flex flex-column justify-content-center align-items-center blog-card">
                 <div>
                   <img src={data.src} />
                 </div>
                 <div className="text-center">
-                  <h2 className="text-uppercase text-md montserrat-semi-bold">
+                  <h2 className="text-uppercase text-ex-md montserrat-semi-bold">
                     {data.name}
                   </h2>
                   <h3 className="text-uppercase text-sm  montserrat-semi-bold">
                     {data.designation}
                   </h3>
-                  <h4 className="text-capitalize ">
+                  <h4 className="text-capitalize text-sm">
                     Noma Management (Pvt.) Limited
                   </h4>
                 </div>

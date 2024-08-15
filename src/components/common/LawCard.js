@@ -26,7 +26,7 @@ import { lawData } from "../../utils/ApplicationData";
 
 const LawCard = () => {
   return (
-    <div className="row gx-5 gy-3">
+    <div className="container row gy-3 gy-md-4 gx-md-0 gx-lg-4 gy-lg-3 gx-xl-0 law-card-section ">
       {/* <Swiper 
         modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
         slidesPerView={4}
@@ -62,20 +62,20 @@ const LawCard = () => {
         {lawData.map((cardData, index) => (
           // <SwiperSlide key={index}>
           
-           <div className="col-12 col-xl-4">
+           <div className="col-12 col-md-6 col-lg-4 col-xl-4">
              <div className=" law-card d-flex justify-content-center  ">
               <div className="law-card-inner position-relative">
                 <div>
-                  <img className="" src={cardData.src} />
+                  <img className="law-card-image" src={cardData.src} />
                 </div>
                 <div className="mt-4 ms-2">
                   <div>
-                    <h2 className="text-md montserrat-semi-bold ">
+                    <h2 className=" montserrat-semi-bold " style={{fontSize:'20px'}}>
                       {cardData.title}
                     </h2>
                   </div>
                   <div className="law-card-text mt-4">
-                    <p className="tex-sm montserrat-medium">
+                    <p className=" montserrat-medium" style={{fontSize:'14px'}}>
                       {cardData.paragraph}
                     </p>
                   </div>
@@ -83,7 +83,7 @@ const LawCard = () => {
                 <div className="d-flex justify-content-between align-items-center  py-3 law-card-button">
                   <div>
                     <span className="text-sm montserrat-medium secondary-text">
-                      Exploe More
+                      Explore More
                     </span>
                   </div>
                   <div className="law-card-icon">
